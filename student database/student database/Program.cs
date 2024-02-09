@@ -11,7 +11,7 @@ string[] food = new string[] { "Pasta", "Sandwich", "Dumplings", "Steak", "Shrim
 bool catagoryExist = true;
 string students = String.Join(", ", studentName);
 Console.WriteLine($"Students on the list are: {students}");
-/*while (tryAgain)
+/*while (tryAgain)   // search students by number
 {
     Console.WriteLine($"Welcome! Which student would you like to learn more about? Enter a number 1-{studentName.Length}:");
     int userNum = int.Parse(Console.ReadLine());
@@ -50,7 +50,7 @@ Console.WriteLine($"Students on the list are: {students}");
 }
 */
 int studentIndex = 0;
-while (tryAgain)
+while (tryAgain)   // search students by name
 {
     Console.WriteLine($"Welcome! Which student would you like to learn more about? Enter the student's name:");
     TextInfo textinfo = new CultureInfo("en-US", false).TextInfo;
